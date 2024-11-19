@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'jesusmiguel',
+    host: 'database-nodejsform.clcawmawq8ni.us-east-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'jesusmiguel2024-2425',
     database: 'bd_usuarios',
-    port: 33066
+    port: 3306
 })
 
 app.get('/', (req, res) => {
